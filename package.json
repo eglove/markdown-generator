@@ -1,6 +1,6 @@
 {
   "name": "@ethang/markdown-generator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Ethan Glover",
   "type": "module",
   "description": "Markdown Generator following GitHub syntax.",
