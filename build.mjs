@@ -3,7 +3,7 @@ import { projectBuilder } from "@ethang/project-builder/project-builder.js";
 await projectBuilder("markdown-generator", "main", {
   isLibrary: true,
   publishDirectory: "dist",
-  scripts: ["UPDATE", "DEDUPE", "LINT"],
+  scripts: ["UPDATE", "DEDUPE"],
   tsConfigOverrides: {
     compilerOptions: {
       emitDeclarationOnly: true,
