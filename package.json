@@ -1,6 +1,6 @@
 {
   "name": "@ethang/markdown-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Ethan Glover",
   "type": "module",
   "description": "Markdown Generator following GitHub syntax.",
@@ -26,6 +26,9 @@
     "typescript-eslint": "^8.2.0"
   },
   "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "peerDependencies": {
     "lodash": "^4.17.21"
   }
 }
