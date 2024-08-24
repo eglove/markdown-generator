@@ -12,8 +12,10 @@ export class MarkdownGenerator {
     this.markdown += `**${text}**`;
   }
 
-  public codeBlock(text: string) {
-    this.markdown += `\`\`\`${text}\`\`\``;
+  public codeBlock(text: string, language = "") {
+    this.markdown += `\`\`\`${language}
+${text}
+\`\`\``;
   }
 
   public header(level: 1 | 2 | 3, text: string) {
