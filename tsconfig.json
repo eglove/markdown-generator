@@ -1,3 +1,6 @@
 {
-  "extends": ["@tsconfig/strictest", "@tsconfig/node-lts"]
+  "extends": ["@tsconfig/strictest", "@tsconfig/node-lts"],
+  "compilerOptions": {
+    "declaration": true,
+  }
 }
