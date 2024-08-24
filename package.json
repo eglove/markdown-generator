@@ -9,10 +9,11 @@
     "url": "git+https://github.com/eglove/markdown-generator.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src --fix"
   },
   "devDependencies": {
     "@ethang/eslint-config": "^19.0.11",
+    "@ethang/project-builder": "^2.3.10",
     "@tsconfig/node-lts": "^20.1.3",
     "@tsconfig/strictest": "^2.0.5",
     "eslint": "^9.9.1",
