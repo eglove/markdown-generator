@@ -1,4 +1,4 @@
-import { projectBuilder } from "@ethang/project-builder/project-builder.js";
+import { projectBuilder } from "@ethang/project-builder/src/project-builder.ts";
 
 await projectBuilder("markdown-generator", "main", {
   isLibrary: true,
