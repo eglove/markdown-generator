@@ -55,9 +55,14 @@ export class MarkdownGenerator {
     }
   }
 
-  public numberedList(texts: string[]) {
+  public numberedList(texts: string[], level = 0) {
+    let space = "";
+    for (let index = 0; index < level; index += 1) {
+      space += " ";
+    }
+
     for (const text of texts) {
-      this.markdown += `1. ${text}\n`;
+      this.markdown += `${space}1. ${text}\n`;
     }
   }
 
@@ -92,9 +97,18 @@ export class MarkdownGenerator {
     }
   }
 
-  public unorderedList(texts: string[]) {
+  public text(text: string) {
+    this.markdown += text;
+  }
+
+  public unorderedList(texts: string[], level = 0) {
+    let space = "";
+    for (let index = 0; index < level; index += 1) {
+      space += " ";
+    }
+
     for (const text of texts) {
-      this.markdown += `* ${text}\n`;
+      this.markdown += `${space}* ${text}\n`;
     }
   }
 }
