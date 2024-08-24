@@ -1,3 +1,5 @@
+import isNil from "lodash/isNil.js";
+
 export class MarkdownGenerator {
   private markdown = "";
 
@@ -43,8 +45,14 @@ export class MarkdownGenerator {
     this.markdown += `@${text}`;
   }
 
-  public newLine() {
-    this.markdown += "\n";
+  public newLine(times?: number) {
+    if (isNil(times)) {
+      this.markdown += "\n";
+    } else {
+      for (let index = 0; index < times; index += 1) {
+        this.markdown += "\n";
+      }
+    }
   }
 
   public numberedList(texts: string[]) {
