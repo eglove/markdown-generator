@@ -57,6 +57,10 @@ export class MarkdownGenerator {
     this.markdown += `> ${text}`;
   }
 
+  public render() {
+    return this.markdown;
+  }
+
   public strickthrough(text: string) {
     this.markdown += `~~${text}~~`;
   }
