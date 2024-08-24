@@ -16,7 +16,7 @@ export class MarkdownGenerator {
 
   public header(level: 1 | 2 | 3, text: string) {
     let prefix = "";
-    for (let index = 1; index < level; index += 1) {
+    for (let index = 0; index < level; index += 1) {
       prefix += "#";
     }
 
