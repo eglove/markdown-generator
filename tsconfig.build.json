@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "@tsconfig/strictest",
+    "@tsconfig/node-lts"
+  ],
+  "compilerOptions": {
+    "emitDeclarationOnly": true
+  },
+  "include": [
+    "src"
+  ]
+}
