@@ -1,6 +1,8 @@
 import isArray from "lodash/isArray.js";
 import isNil from "lodash/isNil.js";
 
+type NestedStringArray = NestedStringArray[] | string;
+
 export class MarkdownGenerator {
   private markdown = "";
 
@@ -67,10 +69,10 @@ ${text}
     }
   }
 
-  public numberedList(texts: (string | string[])[], level = 0) {
+  public numberedList(texts: NestedStringArray, level = 0) {
     let space = "";
     for (let index = 0; index < level; index += 1) {
-      space += " ";
+      space += "\t";
     }
 
     for (const text of texts) {
@@ -123,10 +125,10 @@ ${text}
     this.newLine(lineBreaksAfter);
   }
 
-  public unorderedList(texts: (string | string[])[], level = 0) {
+  public unorderedList(texts: NestedStringArray, level = 0) {
     let space = "";
     for (let index = 0; index < level; index += 1) {
-      space += " ";
+      space += "\t";
     }
 
     for (const text of texts) {
