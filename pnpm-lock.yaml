@@ -13,8 +13,8 @@ importers:
         version: 4.17.21
     devDependencies:
       '@ethang/eslint-config':
-        specifier: ^19.1.0
-        version: 19.1.0(hkwdqxlhn27hlzfwovw7anpioy)
+        specifier: ^19.1.1
+        version: 19.1.1(hkwdqxlhn27hlzfwovw7anpioy)
       '@ethang/project-builder':
         specifier: ^2.3.10
         version: 2.3.10(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.1.8)(lodash@4.17.21)(simple-git@3.25.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0))(typescript@5.5.4)
@@ -1044,8 +1044,8 @@ packages:
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@ethang/eslint-config@19.1.0':
-    resolution: {integrity: sha512-Yf3LYGTWn00F05/2c2jSAFYw1QWsyvoAboaoNlUPgmzs6NDBuJ7DWJJEj2P/4lfXuFip2Wf8iffDa+ZJil5Z6w==}
+  '@ethang/eslint-config@19.1.1':
+    resolution: {integrity: sha512-NitYqWBbJRF01whYACSk3ZOyl+fU887vZJhccBGNLT5EFduhgdaaWWEf16PIcYGycIe9R+vAmP1JuN5dfyUjZQ==}
     engines: {node: '>=20'}
     peerDependencies:
       '@eslint-react/eslint-plugin': ^1.12.1
@@ -5119,7 +5119,7 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@ethang/eslint-config@19.1.0(hkwdqxlhn27hlzfwovw7anpioy)':
+  '@ethang/eslint-config@19.1.1(hkwdqxlhn27hlzfwovw7anpioy)':
     dependencies:
       '@eslint-react/eslint-plugin': 1.12.1(eslint@9.9.1(jiti@1.21.6))(typescript@5.5.4)
       '@eslint/js': 9.9.1
