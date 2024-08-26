@@ -1,13 +1,13 @@
 {
   "name": "@ethang/markdown-generator",
   "version": "1.1.1",
-  "author": "Ethan Glover",
-  "type": "module",
   "description": "Markdown Generator following GitHub syntax.",
-  "license": "ISC",
   "repository": {
     "url": "git+https://github.com/eglove/markdown-generator.git"
   },
+  "license": "ISC",
+  "author": "Ethan Glover",
+  "type": "module",
   "scripts": {
     "lint": "eslint src --fix"
   },
@@ -15,6 +15,9 @@
     "defaults and fully supports es6-module",
     "maintained node versions"
   ],
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
   "devDependencies": {
     "@ethang/eslint-config": "^19.1.1",
     "@ethang/project-builder": "^2.4.0",
@@ -25,9 +28,6 @@
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.2.0",
     "vitest": "^2.0.5"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
   },
   "peerDependencies": {
     "lodash": "^4.17.21"
