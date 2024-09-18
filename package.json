@@ -19,7 +19,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@ethang/eslint-config": "^19.5.8",
+    "@ethang/eslint-config": "^19.6.0",
     "@ethang/project-builder": "^2.5.11",
     "@tsconfig/node-lts": "^20.1.3",
     "@tsconfig/strictest": "^2.0.5",
