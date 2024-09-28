@@ -4,8 +4,8 @@ await projectBuilder("markdown-generator", "main", {
   isLibrary: true,
   publishDirectory: "dist",
   scripts: [
-    "bun x taze latest -I",
-    "bun lint",
+    "pnpm up -i --latest",
+    "pnpm lint",
   ],
   tsConfigOverrides: {
     compilerOptions: {
