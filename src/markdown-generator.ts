@@ -93,7 +93,7 @@ ${text}
     return this.markdown;
   }
 
-  public strickthrough(text: string, lineBreaksAfter = 0) {
+  public strikeThrough(text: string, lineBreaksAfter = 0) {
     this.markdown += `~~${text}~~`;
     this.newLine(lineBreaksAfter);
   }
