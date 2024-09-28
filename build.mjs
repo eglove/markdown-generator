@@ -3,7 +3,10 @@ import { projectBuilder } from "@ethang/project-builder/project-builder.js";
 await projectBuilder("markdown-generator", "main", {
   isLibrary: true,
   publishDirectory: "dist",
-  scripts: ["UPDATE", "DEDUPE"],
+  scripts: [
+    "bun x taze latest -I",
+    "bun lint",
+  ],
   tsConfigOverrides: {
     compilerOptions: {
       emitDeclarationOnly: true,
