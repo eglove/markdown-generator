@@ -5,6 +5,7 @@ await projectBuilder("markdown-generator", "main", {
   publishDirectory: "dist",
   scripts: [
     "pnpm up -i --latest",
+    "pnpm dedupe",
     "pnpm lint",
   ],
   tsConfigOverrides: {
